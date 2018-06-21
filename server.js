@@ -46,10 +46,15 @@ app.get('/', (req, res) => {
   });
 });
 
-
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageTitle: 'About Page'
+  });
+});
+
+app.get('/portfolio', (req, res) => {
+  res.render('portfolio.hbs', {
+    pageTitle: 'Portfolio'
   });
 });
 
